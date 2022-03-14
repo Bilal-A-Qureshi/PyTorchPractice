@@ -20,3 +20,8 @@ net = Net()
 print(net)
 
   
+#we have to change the view first
+X=X.view(-1,28*28) #-1 says that no batch just take the data
+
+output = net(X)
+print(output)
